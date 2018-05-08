@@ -10,7 +10,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -69,10 +68,6 @@ var webpackConfig = merge(baseWebpackConfig, {
     new ExtractTextPlugin({
       filename: utils.assetsPath('css/[name].[hash].css')
     }),
-    // new MiniCssExtractPlugin({
-    //   filename: "[name].css",
-    //   chunkFilename: "[id].css"
-    // }),
     
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
