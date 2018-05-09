@@ -7,11 +7,12 @@ module.exports = {
 	env: {
 		browser: true,
 	},
-	/*extends: 'airbnb-base',*/
+	// extends: 'airbnb-base',
 	plugins: [
 		'html'
 	],
 	'settings': {
+		'import/parser': 'babel-eslint',
 		'import/resolver': {
 			'webpack': {
 				'config': 'build/webpack.base.conf.js'
